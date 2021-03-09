@@ -8,7 +8,7 @@ app.use(cors());
 
 app.get('/', (req, res) => res.send('Hello World!!!!'))
 
-app.get('/searchresults', (req, res) => res.send("test object") )
+app.get('/searchresults', (req, res) => res.send(webpages) )
 
 app.get('/randomresult', (req, res) => {
     console.log(webpages)
