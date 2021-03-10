@@ -1,27 +1,23 @@
 let searchBttn = document.querySelector("#google-search")
 let otherBttn = document.querySelector("#other-search")
+let form = document.querySelector('form')
 
-searchBttn.addEventListener('submit', searchForResults)
+let x =2;
+otherBttn.addEventListener('click', getOneResult)
+searchBttn.addEventListener('click', search)
 
-otherBttn.addEventListener('submit', getOneResult)
+function search(event) {
+    if(x>1) { event.preventDefault() }
+}
 
-function getOneResult(){
-fetch('localhost:3000/randomresult')
-.catch(err => console.log(err.message))
+function getOneResult(event){
+    console.log(event)
+    event.preventDefault()    
+    fetch('http://localhost:3000/randomresult')
+    .then(res => res.text())
+    .then(link => window.location=link)
+    .catch(err => console.log(err.message))
 }
 
 
-function searchForResults(event){
-event.preventDefault()
-let results = document.querySelector("#search-box");
-getAllResults(results)
-}
 
-function getAllResults(){
-fetch('localhost:3000/searchresults')
-.then(loadResultsPage)
-}
-
-function loadResultsPage(){
-  
-}
