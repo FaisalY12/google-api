@@ -2,13 +2,11 @@ let searchBttn = document.querySelector("#google-search")
 let otherBttn = document.querySelector("#other-search")
 let form = document.querySelector('form')
 
-let x =2;
-otherBttn.addEventListener('click', getOneResult)
-searchBttn.addEventListener('click', search)
 
-function search(event) {
-    if(x>1) { event.preventDefault() }
-}
+otherBttn.addEventListener('click', getOneResult)
+
+
+
 
 function getOneResult(event){
     console.log(event)
