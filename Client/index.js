@@ -1,5 +1,5 @@
 let searchBttn = document.querySelector("#google-search")
-let otherBttn = document.querySelector("#other-search")
+let otherBttn = document.querySelector("#random-search")
 let form = document.querySelector('form')
 
 
