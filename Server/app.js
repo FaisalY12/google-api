@@ -8,7 +8,14 @@ app.use(cors());
 
 app.get('/', (req, res) => res.send('Hello World!!!!'))
 
-app.get('/searchresults', (req, res) => res.send(webpages) )
+app.get('/searchresults', (req, res) =>  {
+    console.log(req.query)
+    if (req.query.search) {
+       res.send(search(req.query.search))
+    } else {
+    res.send(webpages) }
+})
+
 
 app.get('/randomresult', (req, res) => {
     console.log(webpages)
@@ -19,10 +26,21 @@ app.get('/randomresult', (req, res) => {
     }
 })
 
+
+
 function getRandomPage () {
     let len = webpages.length
     let index =  Math.floor(Math.random() * len)
     return webpages[index].url
+}
+
+
+function search(arg) { 
+    
+    return webpages.filter(webpage =>  
+        webpage.url.toLowerCase().includes(arg.toLowerCase()) || 
+        webpage.description.toLowerCase().includes(arg.toLowerCase())
+        )
 }
  
 module.exports = app;

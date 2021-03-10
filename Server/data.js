@@ -17,7 +17,7 @@ description: "Watch Netflix movies & TV shows online or stream right to your sma
 description: "The trusted source of all the latest breaking news, sports, finance, entertainment and lifestyle stories." },
 {url:"https://www.instagram.com/", title: "Amazon UK® Official Site - Low Prices and Huge Selection", 
 description: "Shop on Our Official Site and Save Money. Free UK Delivery on Eligible Orders!" },
-{url:"https://www.bing.com/", title: "Instagram", 
+{url:"https://www.instagram.com/", title: "Instagram", 
 description: "reate an account or log in to Instagram - A simple, fun & creative way to capture, edit & share photos, videos & messages with friends & family." }
 ]
 
