@@ -1,3 +1,4 @@
+
 function searchResults(){
     console.log()
     fetch('http://localhost:3000/searchresults')
@@ -7,6 +8,7 @@ function searchResults(){
     })
     .catch(err => console.log(err.message))
 }
+
 
 function renderData({url, title, description}) {
     let results = document.querySelector('section')
@@ -25,3 +27,4 @@ function renderData({url, title, description}) {
     results.append(newWebsite)
 }
 searchResults()
+

@@ -13,7 +13,7 @@ app.get('/searchresults', (req, res) => res.send(webpages) )
 app.get('/randomresult', (req, res) => {
     console.log(webpages)
     try{
-    res.redirect(getRandomPage())
+    res.send(getRandomPage())
     }catch(e) {
         console.log(e.message)
     }
