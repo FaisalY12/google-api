@@ -4,6 +4,7 @@ let form = document.querySelector('form')
 let searchBox = document.querySelector('#search-box')
 
 searchBttn.addEventListener('click', setSearch)
+
 otherBttn.addEventListener('click', getOneResult)
 
 function setSearch(event) {

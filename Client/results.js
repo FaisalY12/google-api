@@ -1,5 +1,7 @@
 let searchTerm = sessionStorage.getItem('search')
 
+
+
 function searchResults(){
     let param ="";
     if(searchTerm){
@@ -31,4 +33,20 @@ function renderData({url, title, description}) {
     website.append(newUrlLink, newUrlTitle, newDescrip)
 }
 searchResults()
+
+
+//-------------------------results page search bar---------------------------------------
+
+let searchInput = document.querySelector("#google-search")
+let form = document.querySelector("form")
+
+
+
+searchInput.addEventListener('change', setSearch)
+
+function setSearch(event) {
+    event.preventDefault()
+    sessionStorage.setItem('search', searchInput.value)
+    window.location ="results.html"   
+}
 

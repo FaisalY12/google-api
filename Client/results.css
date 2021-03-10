@@ -28,14 +28,14 @@ p {
   margin-bottom: 0 !important;
 }
 
-#url-result {
-  font-size: 13px;
+section .url-result {
+  font-size: 13px !important ;
 }
 
-#results-page {
-  font-size: 27px;
+section #results-page {
+  font-size: 27px !important;
 }
 
-#page-description {
-  font-size: 14px;
+section #page-description {
+  font-size: 14px !important;
 }
