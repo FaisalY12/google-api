@@ -2,19 +2,40 @@ html {
   padding-top: 30px;
 }
 
-#search-box {
+input #results-search-box {
   display: block;
   position: relative;
-  margin: 0 auto;
+  margin-left: 40px;
   padding-top: 6px;
   width: 50%;
   border-radius: 50px;
 }
-
+.form-control {
+  border-radius: 50px !important;
+}
 ul {
   list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 150px 0px 150px;
 }
 
 li {
   display: inline;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+#url-result {
+  font-size: 13px;
+}
+
+#results-page {
+  font-size: 27px;
+}
+
+#page-description {
+  font-size: 14px;
 }
