@@ -18,7 +18,9 @@
 
 ## Changelog
 
-* Added functional Searchbar 
+* Added search function
+* fixed the Results Page searchBar
+* Updated index.html removed bootstrap
 
 
 
