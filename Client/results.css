@@ -24,8 +24,20 @@ li {
   display: inline;
 }
 
+a {
+  color: #1a0dab !important ;
+  text-decoration: none !important;
+  font-size: 20px !important;
+}
+
+span {
+  color: #202124 !important;
+  font-size: medium ;
+}
+
 p {
-  margin-bottom: 0 !important;
+  font-size: medium !important; 
+  color: #4d5156;
 }
 
 section .url-result {

@@ -10,9 +10,7 @@ otherBttn.addEventListener('click', getOneResult)
 function setSearch(event) {
     event.preventDefault()
     sessionStorage.setItem('search', searchBox.value) 
-    window.location ="results.html"
-    
-    
+    window.location ="results.html"   
 }
 
 
