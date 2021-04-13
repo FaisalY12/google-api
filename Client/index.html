@@ -1,58 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer>  </script>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title>Google</title>
-</head>
-<body>
-    <header>
-<div id="left-section-header">
-  <ul>
-    <li>
-      About
-    </li>
-    <li>
-      Store
-    </li>
-  </ul>
-</div>
-<div id="right-section-header">
-  <ul>
-    <li>
-      Gmail
-    </li>
-    <li>
-      Images
-    </li>
-    <!-- <li>
-     <img src="./images/google_apps_bttn.png" width="30" height="20" id="apps-icon" alt="apps icon">
-    </li>
-    <li>
-      <img src="./images/google_user_icon.png" width="30" height="20" id="user-icon" alt="user icon">
-    </li> -->
-  </ul>
-</div>
-    </header>
-    <section>
-<img src="images/google_logo_main.png" width="300" height="100" alt="Google logo">
-<form >
-  <div class="mb-3">
-    <input type="text" class="form-control" id="search-box" aria-describedby="emailHelp">
-  </div>
-  <div id="search-buttons">
-  <input type="submit" class="btn btn-light" value="Google Search" id="google-search">
-  <input type="click" class="btn btn-light" value="I'm Feeling Lucky" id="random-search" >
-  </div>
-</form>
-    </section>
-    <footer>
 
-    </footer>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer>  </script>
+  <title>Google</title>
+</head>
+
+<body>
+  <header>
+    <div id="left-section-header">
+      <ul>
+        <li>About</li>
+        <li>Store</li>
+      </ul>
+    </div>
+    <div id="right-section-header">
+      <ul>
+        <li>Gmail</li>
+        <li>Images</li>
+      </ul>
+      <img src="./images/google_apps_bttn.png"  id = 'bttn-icon'  alt="apps icon">
+      <img src="./images/google_user_icon.png"  id = 'icon'  alt="user icon">
+    </div>
+  </header>
+
+  <section>
+    <img src="images/google_logo_main.png" width="300" height="100" alt="Google logo" id ="logo">
+    <form>
+        <input type="text" class="form-control" id="search-box" aria-describedby="emailHelp">
+      <div id="search-buttons">
+        <input type="submit" class="btn btn-light" value="Google Search" id="google-search">
+        <input type="click" class="btn btn-light" value="I'm Feeling Lucky" id="random-search">
+      </div>
+    </form>
+  </section>
+  <footer>
+
+  </footer>
 </body>
+
 </html>

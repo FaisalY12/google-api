@@ -17,13 +17,9 @@ function searchResults(){
 
 
 function renderData({url, title, description}) {
-    // let results = document.querySelector('section')
-    // let newWebsite = document.createElement('p')
-    // let urlLink = document.querySelector('#url-result')
-    let newUrlLink = document.createElement('p')
-    // let urlTitle = document.querySelector('#page-name')
-    let newUrlTitle = document.createElement('p')
-    // let descrip = document.querySelector('#page-description')
+    
+    let newUrlLink = document.createElement('span')
+    let newUrlTitle = document.createElement('div')
     let newDescrip = document.createElement('p')
     
     newUrlLink.textContent= url
@@ -42,11 +38,13 @@ let form = document.querySelector("form")
 
 
 
-searchInput.addEventListener('change', setSearch)
+form.addEventListener('submit', setSearch)
 
 function setSearch(event) {
     event.preventDefault()
-    sessionStorage.setItem('search', searchInput.value)
-    window.location ="results.html"   
+    if(searchInput.value) {
+    sessionStorage.setItem('search', searchInput.value )
+    window.location ="results.html" 
+    }  
 }
 

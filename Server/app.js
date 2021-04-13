@@ -9,7 +9,6 @@ app.use(cors());
 app.get('/', (req, res) => res.send('Hello World!!!!'))
 
 app.get('/searchresults', (req, res) =>  {
-    console.log(req.query)
     if (req.query.search) {
        res.send(search(req.query.search))
     } else {
@@ -18,7 +17,6 @@ app.get('/searchresults', (req, res) =>  {
 
 
 app.get('/randomresult', (req, res) => {
-    console.log(webpages)
     try{
     res.send(getRandomPage())
     }catch(e) {
@@ -26,7 +24,7 @@ app.get('/randomresult', (req, res) => {
     }
 })
 
-
+//----------functions--------------
 
 function getRandomPage () {
     let len = webpages.length
@@ -42,6 +40,6 @@ function search(arg) {
         webpage.description.toLowerCase().includes(arg.toLowerCase())
         )
 }
- 
+//----------------------------------
 module.exports = app;
 

@@ -1,62 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px
+}
+
+/*------------------- Header styling------------------------------------*/
+
 header {
   display: flex;
-  padding: 6px;
+  padding: 0 18px;
   font-size: 14px;
   font-family: arial, sans-serif;
   color: #222;
   height: 60px;
+  width: 100vw;
   flex-shrink: 0;
   box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul {
   list-style-type: none;
+  display:flex;
 }
 
-li {
-  display: inline;
+li , #bttn-icon {
+  padding: 0 10px;
 }
 
-#left-section-header {
-  width: 15%;
-  display: inline;
-  text-align: start;
+#icon {
+  width : 35px;
+  height: 35px;
+}
+
+#bttn-icon{
+  width : 19px;
+  height: 19px;
+
 }
 
 #right-section-header {
-  width: 85%;
-  display: inline;
-  text-align: end;
-}
-
-#apps-icon {
   display: flex;
-  position: relative;
-  margin-right: 90px;
-}
+  align-items: center;
+} 
 
-#apps-user {
+/*------------------- Google log  & input styling -------------------------------------------*/
+
+section {
   display: flex;
-  position: relative;
-  margin-right: 90px;
+  flex-direction: column;
+  align-items: center;
 }
 
-img {
-  margin: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#logo {
+  padding-top: 20vh;
 }
+
+
 form {
   padding: 20px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+#search-buttons {
+  display:block;
+}
+
+
 #search-box {
-  display: block;
-  position: relative;
-  margin: 0 auto;
-  padding-top: 6px;
-  width: 50%;
+  background: #fff;
+  width: 582px;
+  border: 1px solid #dfe1e5;
+  width: 582px;
   border-radius: 50px;
+  height: 44px;
+  font-size: 16px;
+  text-indent: 20px;
 }
 
 #search-buttons {
@@ -68,4 +92,24 @@ form {
   max-width: 584px;
   height: 70px;
   justify-content: space-evenly;
+}
+
+/*-- search button styling --*/
+#random-search {
+  box-sizing:border-box;
+  width: 149px;
+}
+
+form .btn-light {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  width: 129px;
+  text-align: center;
+  cursor: pointer;
 }
